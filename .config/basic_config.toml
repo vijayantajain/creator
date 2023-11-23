@@ -1,0 +1,11 @@
+[extract]
+    filepath = 'data/prcs_data.json'
+    n_hops = 3
+    label = 'privacy_practice'
+    output_dir = 'data/extract/java'
+
+[mine]
+    num_of_threads = 16
+
+[create]
+    output_filepath = 'data/prcs_test.txt'

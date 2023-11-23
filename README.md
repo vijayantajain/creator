@@ -1,2 +1,5 @@
 # creator
-A repository that creates dataset of AST paths. 
+
+A repository to create AST path files from JSON/text file. 
+
+

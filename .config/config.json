@@ -1,0 +1,33 @@
+{
+    "extract_cfg": {
+        "filepath": "data/prcs_data.json",
+        "n_hops": 3,
+        "label": "privacy_practice",
+        "output_dir": "data/extract/java"
+    },
+    "mine_cfg": {
+        "cli_dir": "astminer/",
+        "output_dir": "data/mine",
+        "num_of_threads": 16,
+        "config_path": "astminer/configs/new_test_config.yaml",
+        "parser": {
+            "name": "antlr",
+            "languages": [
+                "java"
+            ]
+        },
+        "label": {
+            "name": "file name"
+        },
+        "storage": {
+            "name": "code2seq",
+            "length": 10,
+            "width": 2,
+            "nodesToNumber": true
+        }
+    },
+    "create_cfg": {
+        "output_filepath": "data/prcs_test.txt",
+        "delimiter": "|"
+    }
+}
